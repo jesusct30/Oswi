@@ -1,0 +1,28 @@
+.row{
+    max-width: $ancho-grid;
+    margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: $espacio_row;
+    }
+
+    @include clearfix();
+
+    [class^="col-"]{
+        float: left;
+        &:not(:last-child){
+            margin-right: $espacio_col;
+        }
+
+        background-color: $color-nav;
+        color: $color-blanco;
+    }
+
+    
+     .col-1-4{
+         width: calc((100% - #{$espacio_col*3})/4);
+     }
+     
+     h1{
+         font-family: IndieFlower,cursive;
+     }
+}//cierra row

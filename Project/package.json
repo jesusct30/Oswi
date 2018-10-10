@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Sitio Web Responsive con SASS",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/estilo.css -w"
+  },
+  "author": "Jesus Contreras",
+  "license": "ISC"
+}
