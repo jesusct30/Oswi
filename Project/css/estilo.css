@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lato";
+  src: url(fonts/Lato-Black.ttf); }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -18,7 +22,7 @@
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInUnder {
+@keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(10rem); }
@@ -28,9 +32,37 @@
     opacity: 1;
     transform: translate(0); } }
 
-@font-face {
-  font-family: "Lato";
-  src: url(../fonts/Lato-Bold.ttf); }
+.u-texto-centrado {
+  text-align: center !important; }
+
+.u-margen-inf-grande {
+  margin-bottom: 8rem; }
+
+.row {
+  max-width: 90rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-3 {
+    width: calc((100% - 12rem)/3); }
+  .row .col-2-3 {
+    width: calc(2*((100% - 2*6rem)/3) + 6rem); }
+  .row .col-1-4 {
+    width: calc((100% - 3* 6rem)/4); }
+  .row .col-2-4 {
+    width: calc(2*((100% - 3* 6rem)/4) + 6rem); }
+  .row .col-3-4 {
+    width: calc(3*((100% - 3* 6rem)/4) + 2*6rem); }
 
 * {
   margin: 0;
@@ -49,26 +81,31 @@ html {
       font-size: 37.5%; } }
 
 body {
-  padding: 3rem;
-  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  font-family: "Lato";
   font-weight: 400;
   line-height: 1.7;
-  color: #eeeeee; }
+  color: #eeeeee;
+  padding: 3rem; }
   @media only screen and (max-width: 600px) {
     body {
       padding: 0; } }
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 87, 34, 0.5), rgba(255, 202, 38, 0.5)), url(../img/b.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 87, 34, 0.4), rgba(255, 202, 40, 0.4)), url(../img/fondo.jpg);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); } }
   @media only screen and (max-width: 600px) {
     .header {
       height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); } }
   .header_logo_box {
     position: absolute;
     top: 4rem;
@@ -84,38 +121,37 @@ body {
     @media only screen and (max-width: 900px) {
       .header_text_box {
         top: 60%; } }
-
-.heading_primary {
-  text-transform: uppercase;
-  margin-bottom: 6rem; }
-  .heading_primary-main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
-    @media only screen and (max-width: 900px) {
-      .heading_primary-main {
-        font-size: 5rem;
-        letter-spacing: 2.2rem; } }
-    @media only screen and (max-width: 600px) {
-      .heading_primary-main {
-        font-size: 4rem;
-        letter-spacing: 1.9rem; } }
-  .heading_primary-sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.5rem;
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
-    @media only screen and (max-width: 900px) {
-      .heading_primary-sub {
-        font-size: 1.5rem;
-        letter-spacing: 1.2rem; } }
+  .header .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header .heading_primary-main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 600px) {
+        .header .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header .heading_primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -130,31 +166,28 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn-azul {
-  background-color: #fff;
-  color: #9e9e9e; }
+  box-shadow: 0 0.5rem 1rem rgba(0, 128, 0, 0.9); }
 
 .btn-blanco {
   background-color: #fff;
   color: #9e9e9e; }
   .btn-blanco::after {
-    background-color: #fff; }
+    background-color: #fff;
+    color: #9e9e9e; }
 
 .btn-animado {
-  animation-name: moveInUnder;
-  animation-duration: 1s;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
   animation-timing-function: ease-out;
-  animation-delay: .75s;
+  animation-delay: 3s;
   animation-fill-mode: backwards; }
 
 .btn::after {
@@ -168,3 +201,28 @@ body {
   left: 0;
   z-index: -1;
   transition: all .4s; }
+
+.seccion-about {
+  background-color: #eeeeee;
+  padding: 25rem 0;
+  margin-top: -13rem;
+  color: #000; }
+
+heading-segundario {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline;
+  letter-spacing: .3rem; }
+
+.parrafo {
+  font-size: 1.6rem; }
+  .parrafo:last-child {
+    margin-bottom: 3rem; }
+  .parrafo:not(::last-child) {
+    margin-bottom: 1rem; }
+
+.composicion {
+  position: relative; }
+  .composicion_foto {
+    width: 55%; }

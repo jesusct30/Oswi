@@ -1,150 +1,135 @@
 @import "abstract/mixins";
+@import "abstract/variables";
 @import "base/animations";
+@import "base/utilities";
 @import "layout/grid";
 
-$color-blanco: #fff;
-$color-gris-oscuro: #9e9e9e;
-$color-negro: #000;
-$color-naranja: #ff5722;
-$color-naranja-claro: #ffca26;
-$color-gris-claro: #eeeeee;
 
-$font-default-tam: 1.6rem;
 
-@font-face{
-    font-family: "Lato";
-    src: url(../fonts/Lato-Bold.ttf);
-}
 
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-html{
-    font-size: 62.5%; //rem = 10px=/16 = 0.625 * 100 = 62.5
-    @include respond(desktop){
-        font-size: 75%;// 12px
 
+html{
+    font-size: 62.5%;//1rem = 10px;   10/16 = 0.625 * 100 = 62.5%; 
+    @include respond(desktop){
+        font-size: 75%;//  12px;
     }
     @include respond(tab-land){
-        font-size: 56.25%;// 12px
-        
+        font-size: 56.25%;//  9px;
     }
     @include respond(telefono){
-        font-size: 37.5%;// 12px
-        
+        font-size: 37.5%;// 5px;
     }
+       
 }
 
 body{
+    
+    box-sizing: border-box; //border por dentro del body
     @include respond(telefono){
-        padding: 0;// 12px
-        
+        padding: 0;
     }
-    padding: 3rem; //3rem=30px
-    font-family: "Lato", sans-serif;
+
+    font-family: "Lato";
     font-weight: 400;
     line-height: 1.7;
     color: $color-gris-claro;
-}
+    padding: 3rem; //3rem = 30px;
+}    
+
 
 .header{
 
     height: 85vh;
-    background-image: linear-gradient(to right bottom,
-    rgba($color-naranja,.5),
-    rgba($color-naranja-claro,.5)
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-naranja, 0.4),
+        rgba($color-amarillo, 0.4)),
+         url(../img/fondo.jpg);
 
-    
-    
-     ), url(../img/b.jpg);
-
-     
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);//izSUP,derSUP,derINF,izINF
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+    @include respond(tab-port){
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
+        
+    } 
     @include respond(telefono){
         height: 75vh;
-   // background-image: linear-gradient(to right bottom,
-    //rgba($color-naranja,.5),
-   // rgba($color-naranja-claro,.5)
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
         
-    
-    
-  //   ), url(../img/b.jpg);
-     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
     }
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     position: relative;
 
-    
-
     &_logo_box{
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
     }
 
     &_logo{
         height: 10rem;
     }
+
     &_text_box{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);//Posocionar en el centro
-        @include respond(tab-port){
-            top: 60%;
-        }
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       text-align: center;
+       transform: translate(-50%,-50%);
+       @include respond(tab-port){
+        top: 60%; 
+        
     }
-    
-}
-
-.heading_primary{
-    text-transform: uppercase;
-
-    margin-bottom: 6rem;
-
-    &-main{
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-
-        @include respond(tab-port){
-            font-size: 5rem;
-            letter-spacing: 2.2rem;
-        }
-
-        @include respond(telefono){
-            font-size: 4rem;
-            letter-spacing: 1.9rem;
-        }
-
-        animation-name: moveInLeft;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-
     }
-    &-sub{
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.5rem;
 
-        @include respond(tab-port){
-            font-size: 1.5rem;
-            letter-spacing: 1.2rem;
+    .heading_primary{
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+
+        &-main{
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+           
+
+            @include respond(telefono){
+                font-size:5rem; 
+                letter-spacing: 2.2rem;
+            }
+            @include respond(telefono){
+                font-size:4rem; 
+                letter-spacing: 1.9rem;
+            }
         }
 
-        animation-name: moveInRight;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
+        &-sub{
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.5rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            @include respond(tab-port){
+                font-size:1.5rem; 
+                letter-spacing: 1.2rem;
+            }
+        }
     }
 }
 
 .btn{
-    
     &,
     &:link,
     &:visited{
@@ -152,35 +137,27 @@ body{
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
-        border-radius:10rem;
+        border-radius: 10rem;
         font-size: $font-default-tam;
         position: relative;
         transition: all .2s;
         border: none;
-
-
-       
-
     }
 
     &:hover{
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-negro, .2); 
+        box-shadow: 0 1rem 2rem rgba($color-negro ,  0.9);
         &::after{
             transform: scaleX(1.4) scaleY(1.6);
-           opacity: 0; //lo vulve invisible
+            opacity: 0;
         }
     }
 
-    &:active{
+    &:active,
+    &:focus{
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-negro, .2);
-    }
-
-    &-azul{
-        background-color: $color-blanco;
-        color: $color-gris-oscuro; 
+        box-shadow: 0 .5rem 1rem rgba(green ,  0.9);
     }
 
     &-blanco{
@@ -188,18 +165,20 @@ body{
         color: $color-gris-oscuro;
         &::after{
             background-color: $color-blanco;
+            color:$color-gris-oscuro;
         }
     }
+
     &-animado{
-        animation-name: moveInUnder;
-        animation-duration: 1s;
+        animation-name: moveInBottom;
+        animation-duration: 3s;
         animation-timing-function: ease-out;
-        animation-delay: .75s;
+        animation-delay: 3s;
         animation-fill-mode: backwards;
     }
 
     &::after{
-        content: "";
+        content:"";
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -210,7 +189,36 @@ body{
         z-index: -1;
         transition: all .4s;
     }
-    
 
-    
+}
+.seccion-about{
+    background-color: $color-gris-claro;
+    padding: 25rem 0;
+    margin-top: -13rem;
+    color: $color-negro;
+}
+
+heading-segundario{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: inline;
+    letter-spacing: .3rem;
+}
+
+.parrafo{
+    font-size: $font-default-tam;
+    &:last-child{
+        margin-bottom: 3rem;
+    }
+    &:not(::last-child){
+        margin-bottom: 1rem;
+    }
+}
+.composicion{
+    position: relative;
+    &_foto{
+        width: 55%;
+    }
+
 }
