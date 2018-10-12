@@ -45,22 +45,18 @@ body{
 .header{
 
     height: 85vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-naranja, 0.4),
-        rgba($color-amarillo, 0.4)),
-         url(../img/fondo.jpg);
+    background-image: url(../img/Summer-alcoholic-beverages-beer-mugs_3840x2160.jpg);
 
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
     //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
     @include respond(tab-port){
         height: 80vh;
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
         
     } 
     @include respond(telefono){
         height: 75vh;
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
         
     }
     background-size: cover;
@@ -83,10 +79,7 @@ body{
        left: 50%;
        text-align: center;
        transform: translate(-50%,-50%);
-       @include respond(tab-port){
-        top: 60%; 
-        
-    }
+      
     }
 
     .heading_primary{
@@ -133,6 +126,7 @@ body{
     &,
     &:link,
     &:visited{
+        top: -60px;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -157,7 +151,7 @@ body{
     &:focus{
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba(green ,  0.9);
+        box-shadow: 0 .5rem 1rem rgba($color-blanco ,  0.9);
     }
 
     &-blanco{
@@ -192,9 +186,19 @@ body{
 
 }
 .seccion-about{
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-naranja, 0.4),
+        rgba($color-amarillo, 0.4)),
+         url(../img/iphone5s-744x1392-wallpaper_04253.jpg);
+         background-size: cover;
+         
+    background-position: top;
+    position: relative;
+    padding-top: 2rem;
     background-color: $color-gris-claro;
-    padding: 25rem 0;
-    margin-top: -13rem;
+        
     color: $color-negro;
 }
 
@@ -218,7 +222,8 @@ heading-segundario{
 .composicion{
     position: relative;
     &_foto{
-        width: 55%;
+        width: 100%;
+        
     }
 
 }

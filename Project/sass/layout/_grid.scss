@@ -1,6 +1,7 @@
 .row{
     max-width: $ancho-grid;
     margin: 0 auto;
+    text-align: center;
     &:not(:last-child){
         margin-bottom: $espacio_row;
     }
