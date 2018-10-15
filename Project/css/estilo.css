@@ -204,13 +204,14 @@ body {
   height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(255, 87, 34, 0.4), rgba(255, 202, 40, 0.4)), url(../img/iphone5s-744x1392-wallpaper_04253.jpg);
   background-size: cover;
+  height: 100%;
   background-position: top;
   position: relative;
   padding-top: 2rem;
   background-color: #eeeeee;
   color: #000; }
 
-heading-segundario {
+.heading-segundario {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 100;
@@ -227,5 +228,102 @@ heading-segundario {
 .composicion {
   position: relative; }
   .composicion_foto {
-    width: 100%;
-    height: 20%; }
+    width: 100%; }
+
+.footer {
+  margin-top: -5px;
+  background-color: #fff01e;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 10px;
+  /*background-image: url(../fondo/Kq1ikVf.jpg);*/
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em; }
+
+#pie p {
+  margin: 5px;
+  font-size: 12px; }
+
+p#redes {
+  padding: 12px 12px; }
+
+#face {
+  margin: 0px 3px 5px 10px;
+  height: 38px;
+  width: 38px; }
+
+#tw {
+  margin: 0px 9px 10px 10px;
+  height: 29px;
+  width: 29px; }
+
+#google {
+  margin: 0px 15px 8px 10px;
+  height: 33px;
+  width: 33px; }
+
+.header2 {
+  height: 100vh;
+  background-image: url(../img/corona.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header2 {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); } }
+  @media only screen and (max-width: 600px) {
+    .header2 {
+      height: 75vh;
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); } }
+  .header2_logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header2_logo {
+    height: 10rem; }
+  .header2_text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .header2_text_box {
+        top: 60%; } }
+  .header2 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header2 .heading_primary-main {
+      color: blue;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 600px) {
+        .header2 .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header2 .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header2 .heading_primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header2 .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }

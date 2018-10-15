@@ -61,6 +61,7 @@ body{
     }
     background-size: cover;
     background-position: top;
+    
     position: relative;
 
     &_logo_box{
@@ -94,6 +95,7 @@ body{
             animation-name: moveInLeft;
             animation-duration: 3s;
             animation-timing-function: ease-out;
+            
            
 
             @include respond(telefono){
@@ -204,7 +206,7 @@ body{
     color: $color-negro;
 }
 
-heading-segundario{
+.heading-segundario{
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 100;
@@ -225,7 +227,134 @@ heading-segundario{
     position: relative;
     &_foto{
         width: 100%;
+    
         
     }
 
+}
+.footer{
+    margin-top: -5px;
+    background-color: rgb(255, 240, 30);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    /*background-image: url(../fondo/Kq1ikVf.jpg);*/
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    
+}
+
+#pie p{
+    margin: 5px;
+    font-size: 12px;
+}
+p#redes{
+    padding: 12px 12px;
+}
+#face{
+    margin: 0px 3px 5px 10px;
+    height: 38px;
+    width: 38px;
+}
+
+#tw{
+    margin: 0px 9px 10px 10px;
+    height: 29px;
+    width: 29px;
+}
+
+#google{
+    margin: 0px 15px 8px 10px;
+    height: 33px;
+    width: 33px;
+}
+.header2{
+
+    height: 100vh;
+    background-image: 
+         url(../img/corona.jpg);
+
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+    @include respond(tab-port){
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
+        
+    } 
+    @include respond(telefono){
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); 
+        
+    }
+    
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &_logo_box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    }
+
+    &_logo{
+        height: 10rem;
+    }
+
+    &_text_box{
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       text-align: center;
+       transform: translate(-50%,-50%);
+       @include respond(tab-port){
+        top: 60%; 
+        
+    }
+    }
+
+    .heading_primary{
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+
+        &-main{
+            color: blue;
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+           
+
+            @include respond(telefono){
+                font-size:5rem; 
+                letter-spacing: 2.2rem;
+            }
+            @include respond(telefono){
+                font-size:4rem; 
+                letter-spacing: 1.9rem;
+            }
+        }
+        
+
+        &-sub{
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.5rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            @include respond(tab-port){
+                font-size:1.5rem; 
+                letter-spacing: 1.2rem;
+            }
+        }
+    }
 }
