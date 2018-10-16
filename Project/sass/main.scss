@@ -44,23 +44,24 @@ body{
 
 .header{
 
-    height: 85vh;
+    height: 60vh;
     background-image: url(../img/Summer-alcoholic-beverages-beer-mugs_3840x2160.jpg);
-
-    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+     
     //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
     @include respond(tab-port){
-        height: 80vh;
+        height: 50vh;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
         
     } 
     @include respond(telefono){
-        height: 75vh;
+        height: 30vh;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
         
     }
     background-size: cover;
     background-position: top;
+    
     position: relative;
 
     &_logo_box{
@@ -94,6 +95,7 @@ body{
             animation-name: moveInLeft;
             animation-duration: 3s;
             animation-timing-function: ease-out;
+            
            
 
             @include respond(telefono){
@@ -126,7 +128,24 @@ body{
     &,
     &:link,
     &:visited{
-        top: -60px;
+        @include respond(desktop){
+            top: -90px;
+        }
+        @include respond(tab-land){
+            top: -80px;
+        }
+       
+        @include respond(tab-port){
+            top: -70px;
+        }
+        @include respond(telefono){
+            top: -60px;
+        }
+        
+
+
+
+        
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -186,7 +205,8 @@ body{
 
 }
 .seccion-about{
-    height: 85vh;
+    height: 70vh;
+   
     background-image: linear-gradient(
         to right bottom,
         rgba($color-naranja, 0.4),
@@ -198,19 +218,39 @@ body{
              
     background-position: top;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 1rem;
     background-color: $color-gris-claro;
         
     color: $color-negro;
 }
 
-heading-segundario{
-    font-size: 3.5rem;
+.heading-secundario{
     text-transform: uppercase;
-    font-weight: 100;
-    display: inline;
-    letter-spacing: .3rem;
+        margin-bottom: 4rem;
+        font-family: "Osw";
+
+        
+            display: block;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2rem;
+            animation-name: moveInBottom;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            color: $color-blanco;
+            text-shadow: 5px 5px 5px #aaa;
+           
+
+            @include respond(tab-port){
+                font-size:3rem; 
+                letter-spacing: 1.5rem;
+            }
+            @include respond(telefono){
+                font-size:2rem; 
+                letter-spacing: 1rem;
+            }
 }
+
 
 .parrafo{
     font-size: $font-default-tam;
@@ -224,8 +264,171 @@ heading-segundario{
 .composicion{
     position: relative;
     &_foto{
-        width: 100%;
+        width: 90%;
+        border-radius: 20%;
+        margin-left: 10px; 
+        box-shadow: 5px 5px 5px #aaa;
+    
         
     }
 
+}
+
+
+#pie{
+    color: $color-blanco;
+    #redes{
+        color: $color-blanco;
+        padding: 12px 12px;
+        margin: 5px;
+        font-size: 3rem;
+        @include respond(tab-land){
+            font-size:2.5rem; 
+            
+        }
+        @include respond(telefono){
+            font-size:2rem; 
+            
+        }
+    }
+   
+    #face{
+        margin: 0px 3px 5px 10px;
+        height: 60px;
+        width: 60px;
+        @include respond(tab-land){
+            height: 50px;
+            width: 50px;
+            
+        }
+        @include respond(telefono){
+            height: 40px;
+            width: 40px;
+            
+        }
+    }
+    
+    #tw{
+        margin: 0px 9px 10px 10px;
+        height: 50px;
+        width: 50;
+        @include respond(tab-land){
+            height: 40px;
+            width: 40px;
+            
+        }
+        @include respond(telefono){
+            height: 30px;
+            width: 30px;
+            
+        }
+    }
+    
+    #google{
+        margin: 0px 15px 8px 10px;
+        height: 50px;
+        width: 50px;
+        height: 50px;
+        width: 50;
+        @include respond(tab-land){
+            height: 40px;
+            width: 40px;
+            
+        }
+        @include respond(telefono){
+            height: 30px;
+            width: 30px;
+            
+        }
+    }
+    
+}
+
+
+
+.header2{
+
+    height: 100vh;
+    background-image: 
+         url(../img/corona.jpg);
+
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+    @include respond(tab-port){
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+        
+    } 
+    @include respond(telefono){
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+        
+    }
+    
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &_logo_box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    }
+
+    &_logo{
+        height: 10rem;
+    }
+
+    &_text_box{
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       text-align: center;
+       transform: translate(-50%,-50%);
+       @include respond(tab-port){
+        top: 60%; 
+        
+    }
+    }
+
+    .heading_primary{
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+
+        &-main{
+            color: blue;
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+           
+
+            @include respond(telefono){
+                font-size:5rem; 
+                letter-spacing: 2.2rem;
+            }
+            @include respond(telefono){
+                font-size:4rem; 
+                letter-spacing: 1.9rem;
+            }
+        }
+        
+
+        &-sub{
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.5rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            @include respond(tab-port){
+                font-size:1.5rem; 
+                letter-spacing: 1.2rem;
+            }
+        }
+    }
 }
