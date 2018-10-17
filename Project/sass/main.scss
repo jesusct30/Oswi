@@ -274,6 +274,56 @@ body{
 
 }
 
+.composicion_2{
+    position: relative;
+    &_foto{
+        width: 55%;
+        border-radius: 20%;
+        box-shadow: 0 1.5rem, 4rem $color-negro;
+        //position: absolute;
+        transition: all .2s;
+        @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
+        }
+        &-f1{
+            left: 0;
+            top: -2rem;
+            @include respond(tab-port){
+                top: 0;
+                
+            }
+        }
+        &-f2{
+            right: 0;
+            top: 2rem;
+            @include respond(tab-port){
+                top: -1;
+                left: 0;
+                
+            }
+        }
+        &-f3{
+            left: 20%;
+            top: 10rem;
+            @include respond(tab-port){
+                top: 1;
+                left: 0;
+                
+            }
+        }
+        &:hover{
+            outline: 1.5rem solid $color-naranja;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem $color-negro;
+            z-index: 100;
+        }
+}
+}
+
+
 
 #pie{
     color: $color-blanco;
