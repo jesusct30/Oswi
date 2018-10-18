@@ -89,12 +89,14 @@ body{
 
         &-main{
             display: block;
+           // border-radius: 10px 5px 10px 5px;
             font-size: 6rem;
             font-weight: 400;
             letter-spacing: 3.5rem;
             animation-name: moveInLeft;
             animation-duration: 3s;
             animation-timing-function: ease-out;
+            border: 8px red ridge;
             
            
 
@@ -223,11 +225,31 @@ body{
         
     color: $color-negro;
 }
+.seccion-about-modelo{
+    height: 70vh;
+   
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(blue, 0.4),
+        rgba($color-amarillo, 0.4)),
+         url(../img/fondo.jpg);
+         background-size: cover;
+         height: 100%;
+         
+             
+    background-position: top;
+    position: relative;
+    padding-top: 1rem;
+    background-color: $color-gris-claro;
+        
+    color: $color-negro;
+}
 
 .heading-secundario{
     text-transform: uppercase;
         margin-bottom: 4rem;
         font-family: "Osw";
+        
 
         
             display: block;
@@ -250,10 +272,71 @@ body{
                 letter-spacing: 1rem;
             }
 }
+.heading-secundarioModelo{
+    border: 8px yellowgreen dotted;
+            border-radius: 20px/10px;
+    box-shadow: 6px 6px 6px black;
+    text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-family: "Osw";
+        
+
+        
+            display: block;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2rem;
+            animation-name: moveInBottom;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            color: $color-blanco;
+            text-shadow: 5px 5px 5px #aaa;
+           
+
+            @include respond(tab-port){
+                font-size:3rem; 
+                letter-spacing: 1.5rem;
+            }
+            @include respond(telefono){
+                font-size:2rem; 
+                letter-spacing: 1rem;
+            }
+
+}
+.titulos{
+    text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-family: "Osw";
+        
+
+        
+            display: block;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 2rem;
+            animation-name: moveInBottom;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            color: $color-blanco;
+            text-shadow: 5px 5px 5px #aaa;
+           
+
+            @include respond(tab-port){
+                font-size:3rem; 
+                letter-spacing: 1.5rem;
+            }
+            @include respond(telefono){
+                font-size:2rem; 
+                letter-spacing: 1rem;
+            }
+}
 
 
 .parrafo{
     font-size: $font-default-tam;
+    opacity: 0.7;
+    background-color: black;
+    color: white;
     &:last-child{
         margin-bottom: 3rem;
     }
@@ -276,25 +359,38 @@ body{
 
 .composicion_2{
     position: relative;
+    &_mainfoto{
+        width: 80%;
+        border-radius: 20%;
+        box-shadow: 0 1.5rem, 4rem $color-negro;
+        //position: absolute;
+        transition: all .2s;
+        &:hover{
+            outline: 1.5rem solid blue;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem $color-negro;
+           z-index: 100;
+        }
+    }
     &_foto{
         width: 55%;
         border-radius: 20%;
         box-shadow: 0 1.5rem, 4rem $color-negro;
         //position: absolute;
         transition: all .2s;
-        @include respond(tab-port){
+      /*  @include respond(tab-port){
             float: left;
             position: relative;
             width: 33.3333%;
             box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
-        }
+        }*/
         &-f1{
             left: 0;
             top: -2rem;
-            @include respond(tab-port){
+           /* @include respond(tab-port){
                 top: 0;
                 
-            }
+            }*/
         }
         &-f2{
             right: 0;
@@ -315,10 +411,10 @@ body{
             }
         }
         &:hover{
-            outline: 1.5rem solid $color-naranja;
+            outline: 1.5rem solid blue;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem $color-negro;
-            z-index: 100;
+           z-index: 100;
         }
 }
 }
@@ -398,7 +494,8 @@ body{
 
 .header2{
 
-    height: 100vh;
+ height: 120vh;
+   
     background-image: 
          url(../img/corona.jpg);
 
@@ -423,10 +520,12 @@ body{
     position: absolute;
     top: 4rem;
     left: 4rem;
+    border-radius: 20%;
     }
 
     &_logo{
         height: 10rem;
+        border-radius: 20%;
     }
 
     &_text_box{
@@ -454,6 +553,10 @@ body{
             animation-name: moveInLeft;
             animation-duration: 3s;
             animation-timing-function: ease-out;
+            border: 8px blue ridge;
+            border-radius: 20px/10px;
+            box-shadow: 6px 6px 6px black;
+            text-shadow: 2px 2px 4px black;
            
 
             @include respond(telefono){

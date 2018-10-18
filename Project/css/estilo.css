@@ -137,7 +137,8 @@ body {
       letter-spacing: 3.5rem;
       animation-name: moveInLeft;
       animation-duration: 3s;
-      animation-timing-function: ease-out; }
+      animation-timing-function: ease-out;
+      border: 8px red ridge; }
       @media only screen and (max-width: 600px) {
         .header .heading_primary-main {
           font-size: 5rem;
@@ -231,6 +232,17 @@ body {
   background-color: #eeeeee;
   color: #000; }
 
+.seccion-about-modelo {
+  height: 70vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.4), rgba(255, 202, 40, 0.4)), url(../img/fondo.jpg);
+  background-size: cover;
+  height: 100%;
+  background-position: top;
+  position: relative;
+  padding-top: 1rem;
+  background-color: #eeeeee;
+  color: #000; }
+
 .heading-secundario {
   text-transform: uppercase;
   margin-bottom: 4rem;
@@ -253,8 +265,58 @@ body {
       font-size: 2rem;
       letter-spacing: 1rem; } }
 
+.heading-secundarioModelo {
+  border: 8px yellowgreen dotted;
+  border-radius: 20px/10px;
+  box-shadow: 6px 6px 6px black;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-family: "Osw";
+  display: block;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  color: #fff;
+  text-shadow: 5px 5px 5px #aaa; }
+  @media only screen and (max-width: 900px) {
+    .heading-secundarioModelo {
+      font-size: 3rem;
+      letter-spacing: 1.5rem; } }
+  @media only screen and (max-width: 600px) {
+    .heading-secundarioModelo {
+      font-size: 2rem;
+      letter-spacing: 1rem; } }
+
+.titulos {
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-family: "Osw";
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  color: #fff;
+  text-shadow: 5px 5px 5px #aaa; }
+  @media only screen and (max-width: 900px) {
+    .titulos {
+      font-size: 3rem;
+      letter-spacing: 1.5rem; } }
+  @media only screen and (max-width: 600px) {
+    .titulos {
+      font-size: 2rem;
+      letter-spacing: 1rem; } }
+
 .parrafo {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  opacity: 0.7;
+  background-color: black;
+  color: white; }
   .parrafo:last-child {
     margin-bottom: 3rem; }
   .parrafo:not(::last-child) {
@@ -270,23 +332,34 @@ body {
 
 .composicion_2 {
   position: relative; }
+  .composicion_2_mainfoto {
+    width: 80%;
+    border-radius: 20%;
+    box-shadow: 0 1.5rem, 4rem #000;
+    transition: all .2s; }
+    .composicion_2_mainfoto:hover {
+      outline: 1.5rem solid blue;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem #000;
+      z-index: 100; }
   .composicion_2_foto {
     width: 55%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .2s; }
-    @media only screen and (max-width: 900px) {
-      .composicion_2_foto {
-        float: left;
-        position: relative;
-        width: 33.3333%;
-        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    transition: all .2s;
+    /*  @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
+        }*/ }
     .composicion_2_foto-f1 {
       left: 0;
-      top: -2rem; }
-      @media only screen and (max-width: 900px) {
-        .composicion_2_foto-f1 {
-          top: 0; } }
+      top: -2rem;
+      /* @include respond(tab-port){
+                top: 0;
+                
+            }*/ }
     .composicion_2_foto-f2 {
       right: 0;
       top: 2rem; }
@@ -302,7 +375,7 @@ body {
           top: 1;
           left: 0; } }
     .composicion_2_foto:hover {
-      outline: 1.5rem solid #ff5722;
+      outline: 1.5rem solid blue;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem #000;
       z-index: 100; }
@@ -360,7 +433,7 @@ body {
         width: 30px; } }
 
 .header2 {
-  height: 100vh;
+  height: 120vh;
   background-image: url(../img/corona.jpg);
   background-size: cover;
   background-position: top;
@@ -376,9 +449,11 @@ body {
   .header2_logo_box {
     position: absolute;
     top: 4rem;
-    left: 4rem; }
+    left: 4rem;
+    border-radius: 20%; }
   .header2_logo {
-    height: 10rem; }
+    height: 10rem;
+    border-radius: 20%; }
   .header2_text_box {
     position: absolute;
     top: 40%;
@@ -399,7 +474,11 @@ body {
       letter-spacing: 3.5rem;
       animation-name: moveInLeft;
       animation-duration: 3s;
-      animation-timing-function: ease-out; }
+      animation-timing-function: ease-out;
+      border: 8px blue ridge;
+      border-radius: 20px/10px;
+      box-shadow: 6px 6px 6px black;
+      text-shadow: 2px 2px 4px black; }
       @media only screen and (max-width: 600px) {
         .header2 .heading_primary-main {
           font-size: 5rem;
