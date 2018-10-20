@@ -44,8 +44,10 @@ body{
 
 .header{
 
-    height: 60vh;
+    height: 80vh;
     background-image: url(../img/Summer-alcoholic-beverages-beer-mugs_3840x2160.jpg);
+  
+    
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
      
     //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
@@ -60,7 +62,9 @@ body{
         
     }
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
     
     position: relative;
 
@@ -118,6 +122,7 @@ body{
             animation-name: moveInRight;
             animation-duration: 3s;
             animation-timing-function: ease-out;
+            
             @include respond(tab-port){
                 font-size:1.5rem; 
                 letter-spacing: 1.2rem;
@@ -244,8 +249,61 @@ body{
         
     color: $color-negro;
 }
+.seccion-about-moc{ /////moctezuma
+    height: 70vh;
+   
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(blue, 0.4),
+        rgba($color-amarillo, 0.4)),
+         url(../img/moc/noche.jpg);
+         background-size: cover;
+         height: 100%;
+         
+             
+    background-position: top;
+    position: relative;
+    padding-top: 1rem;
+    background-color: $color-gris-claro;
+        
+    color: $color-negro;
+}
 
 .heading-secundario{
+
+
+    text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-family: "Osw";
+        border: 8px red ridge;
+        
+
+        
+            display: block;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2rem;
+            animation-name: moveInBottom;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            color: $color-blanco;
+            text-shadow: 5px 5px 5px #aaa;
+            
+           
+
+            @include respond(tab-port){
+                font-size:3rem; 
+                letter-spacing: 1.5rem;
+            }
+            @include respond(telefono){
+                font-size:2rem; 
+                letter-spacing: 1rem;
+            }
+}
+.heading-secundarioModelo{
+    border: 8px yellowgreen dotted;
+            border-radius: 20px/10px;
+    box-shadow: 0px 6px 6px black;
     text-transform: uppercase;
         margin-bottom: 4rem;
         font-family: "Osw";
@@ -271,11 +329,12 @@ body{
                 font-size:2rem; 
                 letter-spacing: 1rem;
             }
+
 }
-.heading-secundarioModelo{
-    border: 8px yellowgreen dotted;
+.heading-secundarioMoc{
+    border: 8px red inset;
             border-radius: 20px/10px;
-    box-shadow: 6px 6px 6px black;
+    box-shadow: 0px 8px 6px black;
     text-transform: uppercase;
         margin-bottom: 4rem;
         font-family: "Osw";
@@ -333,9 +392,10 @@ body{
 
 
 .parrafo{
+    
     font-size: $font-default-tam;
-    opacity: 0.7;
-    background-color: black;
+    opacity: 0.8;
+    text-align: left;
     color: white;
     &:last-child{
         margin-bottom: 3rem;
@@ -346,8 +406,10 @@ body{
 }
 .composicion{
     position: relative;
+    text-align: center;
     &_foto{
         width: 90%;
+        height: 100%;
         border-radius: 20%;
         margin-left: 10px; 
         box-shadow: 5px 5px 5px #aaa;
@@ -366,7 +428,7 @@ body{
         //position: absolute;
         transition: all .2s;
         &:hover{
-            outline: 1.5rem solid blue;
+            outline: 1.5rem solid red;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem $color-negro;
            z-index: 100;
@@ -440,19 +502,11 @@ body{
         box-shadow: 0 1.5rem, 4rem $color-negro;
         //position: absolute;
         transition: all .2s;
-      /*  @include respond(tab-port){
-            float: left;
-            position: relative;
-            width: 33.3333%;
-            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
-        }*/
+     
         &-f1{
             left: 0;
             top: -2rem;
-           /* @include respond(tab-port){
-                top: 0;
-                
-            }*/
+          
         }
         &-f2{
             right: 0;
@@ -553,6 +607,7 @@ body{
 
 
 
+
 .header2{
 
  height: 120vh;
@@ -646,6 +701,196 @@ body{
         }
     }
 }
+.header2{
+
+    
+
+ height: 120vh;
+   
+    background-image: 
+         url(../img/corona.jpg);
+
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+    //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+    @include respond(tab-port){
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+        
+    } 
+    @include respond(telefono){
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+        
+    }
+    
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &_logo_box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 20%;
+    }
+
+    &_logo{
+        height: 10rem;
+        border-radius: 20%;
+    }
+
+    &_text_box{
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       text-align: center;
+       transform: translate(-50%,-50%);
+       @include respond(tab-port){
+        top: 60%; 
+        
+    }
+    }
+
+    .heading_primary{
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+
+        &-main{
+            color: blue;
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            border: 8px blue ridge;
+            border-radius: 20px/10px;
+            box-shadow: 6px 6px 6px black;
+            text-shadow: 2px 2px 4px black;
+           
+
+            @include respond(telefono){
+                font-size:5rem; 
+                letter-spacing: 2.2rem;
+            }
+            @include respond(telefono){
+                font-size:4rem; 
+                letter-spacing: 1.9rem;
+            }
+        }
+        
+
+        &-sub{
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.5rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            @include respond(tab-port){
+                font-size:1.5rem; 
+                letter-spacing: 1.2rem;
+            }
+        }
+    }
+}
+.headerM{
+
+    
+
+    height: 90vh;
+      
+       background-image: 
+            url(../img/moc/mo.jpg);
+   
+       //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+       //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+       @include respond(tab-port){
+           height: 80vh;
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+           
+       } 
+       @include respond(telefono){
+           height: 75vh;
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+           
+       }
+       
+       background-size: cover;
+       background-position: center;
+       position: relative;
+   
+       &_logo_box{
+       position: absolute;
+       top: 4rem;
+       left: 4rem;
+       border-radius: 20%;
+       }
+   
+       &_logo{
+           height: 10rem;
+           border-radius: 20%;
+       }
+   
+       &_text_box{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%,-50%);
+          @include respond(tab-port){
+           top: 60%; 
+           
+       }
+       }
+   
+       .heading_primary{
+           text-transform: uppercase;
+           margin-bottom: 6rem;
+   
+           &-main{
+               color: red;
+               display: block;
+               font-size: 6rem;
+               font-weight: 400;
+               letter-spacing: 3.5rem;
+               animation-name: moveInLeft;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               border: 8px red ridge;
+               border-radius: 20px/10px;
+               box-shadow: 6px 6px 6px black;
+               text-shadow: 2px 2px 4px black;
+              
+   
+               @include respond(telefono){
+                   font-size:5rem; 
+                   letter-spacing: 2.2rem;
+               }
+               @include respond(telefono){
+                   font-size:4rem; 
+                   letter-spacing: 1.9rem;
+               }
+           }
+           
+   
+           &-sub{
+               display: block;
+               font-size: 2rem;
+               font-weight: 700;
+               letter-spacing: 1.5rem;
+               animation-name: moveInRight;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               @include respond(tab-port){
+                   font-size:1.5rem; 
+                   letter-spacing: 1.2rem;
+               }
+           }
+       }
+   }
 
 .header3{
 
