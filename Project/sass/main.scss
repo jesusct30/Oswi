@@ -419,6 +419,67 @@ body{
 }
 }
 
+.composicion_3{
+    position: relative;
+    &_mainfoto{
+        width: 80%;
+        border-radius: 20%;
+        box-shadow: 0 1.5rem, 4rem $color-negro;
+        //position: absolute;
+        transition: all .2s;
+        &:hover{
+            outline: 1.5rem solid red;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem $color-negro;
+           z-index: 100;
+        }
+    }
+    &_foto{
+        width: 55%;
+        border-radius: 20%;
+        box-shadow: 0 1.5rem, 4rem $color-negro;
+        //position: absolute;
+        transition: all .2s;
+      /*  @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
+        }*/
+        &-f1{
+            left: 0;
+            top: -2rem;
+           /* @include respond(tab-port){
+                top: 0;
+                
+            }*/
+        }
+        &-f2{
+            right: 0;
+            top: 2rem;
+            @include respond(tab-port){
+                top: -1;
+                left: 0;
+                
+            }
+        }
+        &-f3{
+            left: 20%;
+            top: 10rem;
+            @include respond(tab-port){
+                top: 1;
+                left: 0;
+                
+            }
+        }
+        &:hover{
+            outline: 1.5rem solid red;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem $color-negro;
+           z-index: 100;
+        }
+}
+}
 
 
 #pie{
@@ -585,3 +646,97 @@ body{
         }
     }
 }
+
+.header3{
+
+    height: 120vh;
+      
+       background-image: 
+            url(../img/victoriafondo.jpg);
+   
+       //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
+       //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
+       @include respond(tab-port){
+           height: 80vh;
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+           
+       } 
+       @include respond(telefono){
+           height: 75vh;
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+           
+       }
+       
+       background-size: cover;
+       background-position: top;
+       position: relative;
+   
+       &_logo_box{
+       position: absolute;
+       top: 4rem;
+       left: 4rem;
+       border-radius: 20%;
+       }
+   
+       &_logo{
+           height: 10rem;
+           border-radius: 20%;
+       }
+   
+       &_text_box{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%,-50%);
+          @include respond(tab-port){
+           top: 60%; 
+           
+       }
+       }
+   
+       .heading_primary{
+           text-transform: uppercase;
+           margin-bottom: 6rem;
+   
+           &-main{
+               color: red;
+               display: block;
+               font-size: 6rem;
+               font-weight: 400;
+               letter-spacing: 3.5rem;
+               animation-name: moveInLeft;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               border: 8px red ridge;
+               border-radius: 20px/10px;
+               box-shadow: 6px 6px 6px black;
+               text-shadow: 2px 2px 4px black;
+              
+   
+               @include respond(telefono){
+                   font-size:5rem; 
+                   letter-spacing: 2.2rem;
+               }
+               @include respond(telefono){
+                   font-size:4rem; 
+                   letter-spacing: 1.9rem;
+               }
+           }
+           
+   
+           &-sub{
+               display: block;
+               font-size: 2rem;
+               font-weight: 700;
+               letter-spacing: 1.5rem;
+               animation-name: moveInRight;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               @include respond(tab-port){
+                   font-size:1.5rem; 
+                   letter-spacing: 1.2rem;
+               }
+           }
+       }
+   }

@@ -380,6 +380,56 @@ body {
       box-shadow: 0 2.5rem 4rem #000;
       z-index: 100; }
 
+.composicion_3 {
+  position: relative; }
+  .composicion_3_mainfoto {
+    width: 80%;
+    border-radius: 20%;
+    box-shadow: 0 1.5rem, 4rem #000;
+    transition: all .2s; }
+    .composicion_3_mainfoto:hover {
+      outline: 1.5rem solid red;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem #000;
+      z-index: 100; }
+  .composicion_3_foto {
+    width: 55%;
+    border-radius: 20%;
+    box-shadow: 0 1.5rem, 4rem #000;
+    transition: all .2s;
+    /*  @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
+        }*/ }
+    .composicion_3_foto-f1 {
+      left: 0;
+      top: -2rem;
+      /* @include respond(tab-port){
+                top: 0;
+                
+            }*/ }
+    .composicion_3_foto-f2 {
+      right: 0;
+      top: 2rem; }
+      @media only screen and (max-width: 900px) {
+        .composicion_3_foto-f2 {
+          top: -1;
+          left: 0; } }
+    .composicion_3_foto-f3 {
+      left: 20%;
+      top: 10rem; }
+      @media only screen and (max-width: 900px) {
+        .composicion_3_foto-f3 {
+          top: 1;
+          left: 0; } }
+    .composicion_3_foto:hover {
+      outline: 1.5rem solid red;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem #000;
+      z-index: 100; }
+
 #pie {
   color: #fff; }
   #pie #redes {
@@ -497,5 +547,73 @@ body {
       animation-timing-function: ease-out; }
       @media only screen and (max-width: 900px) {
         .header2 .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }
+
+.header3 {
+  height: 120vh;
+  background-image: url(../img/victoriafondo.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header3 {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 600px) {
+    .header3 {
+      height: 75vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  .header3_logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 20%; }
+  .header3_logo {
+    height: 10rem;
+    border-radius: 20%; }
+  .header3_text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .header3_text_box {
+        top: 60%; } }
+  .header3 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header3 .heading_primary-main {
+      color: red;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      border: 8px red ridge;
+      border-radius: 20px/10px;
+      box-shadow: 6px 6px 6px black;
+      text-shadow: 2px 2px 4px black; }
+      @media only screen and (max-width: 600px) {
+        .header3 .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header3 .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header3 .heading_primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header3 .heading_primary-sub {
           font-size: 1.5rem;
           letter-spacing: 1.2rem; } }
