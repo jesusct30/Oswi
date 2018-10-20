@@ -650,10 +650,10 @@ body {
           letter-spacing: 1.2rem; } }
 
 .headerM {
-  height: 90vh;
+  height: 100vh;
   background-image: url(../img/moc/mo.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative; }
   @media only screen and (max-width: 900px) {
     .headerM {

@@ -548,8 +548,7 @@ body{
             
         }
         @include respond(telefono){
-            font-size:2rem; 
-            
+            font-size:2rem;
         }
     }
    
@@ -557,6 +556,7 @@ body{
         margin: 0px 3px 5px 10px;
         height: 60px;
         width: 60px;
+        
         @include respond(tab-land){
             height: 50px;
             width: 50px;
@@ -800,7 +800,7 @@ body{
 
     
 
-    height: 90vh;
+    height: 100vh;
       
        background-image: 
             url(../img/moc/mo.jpg);
@@ -819,7 +819,7 @@ body{
        }
        
        background-size: cover;
-       background-position: center;
+       background-position: top;
        position: relative;
    
        &_logo_box{
