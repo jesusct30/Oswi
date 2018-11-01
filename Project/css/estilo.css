@@ -81,10 +81,13 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 1800px) {
     html {
-      font-size: 75%; } }
+      font-size: 65%; } }
   @media only screen and (max-width: 1200px) {
     html {
       font-size: 56.25%; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 37.25%; } }
   @media only screen and (max-width: 600px) {
     html {
       font-size: 37.5%; } }
@@ -121,8 +124,6 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  .header_logo {
-    height: 10rem; }
   .header_text_box {
     position: absolute;
     top: 40%;
@@ -159,6 +160,214 @@ body {
       animation-timing-function: ease-out; }
       @media only screen and (max-width: 900px) {
         .header .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }
+
+.header-2 {
+  height: 100vh;
+  background-image: url(../img/corona.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header-2 {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 600px) {
+    .header-2 {
+      height: 75vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  .header-2_logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 20%; }
+  .header-2_logo {
+    height: 10rem;
+    border-radius: 20%; }
+  .header-2_text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .header-2_text_box {
+        top: 60%; } }
+  .header-2 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header-2 .heading_primary-main {
+      color: blue;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      border: 8px blue ridge;
+      border-radius: 20px/10px;
+      box-shadow: 6px 6px 6px black;
+      text-shadow: 2px 2px 4px black; }
+      @media only screen and (max-width: 600px) {
+        .header-2 .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header-2 .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header-2 .heading_primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header-2 .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }
+
+.header-3 {
+  height: 100vh;
+  background-image: url(../img/moc/mo.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header-3 {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 600px) {
+    .header-3 {
+      height: 75vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  .header-3_logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 20%; }
+    @media only screen and (max-width: 900px) {
+      .header-3_logo_box {
+        top: -50px; } }
+  .header-3_logo {
+    height: 10rem;
+    border-radius: 20%; }
+  .header-3_text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .header-3_text_box {
+        top: 60%; } }
+  .header-3 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header-3 .heading_primary-main {
+      color: red;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      border: 8px red ridge;
+      border-radius: 20px/10px;
+      box-shadow: 6px 6px 6px black;
+      text-shadow: 2px 2px 4px black; }
+      @media only screen and (max-width: 600px) {
+        .header-3 .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header-3 .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header-3 .heading_primary-sub {
+      color: red;
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header-3 .heading_primary-sub {
+          font-size: 1.5rem;
+          letter-spacing: 1.2rem; } }
+
+.header-4 {
+  height: 120vh;
+  background-image: url(../img/victoriafondo.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @media only screen and (max-width: 900px) {
+    .header-4 {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 600px) {
+    .header-4 {
+      height: 75vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  .header-4_logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 20%; }
+  .header-4_logo {
+    height: 10rem;
+    border-radius: 20%; }
+  .header-4_text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 900px) {
+      .header-4_text_box {
+        top: 60%; } }
+  .header-4 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .header-4 .heading_primary-main {
+      color: red;
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      border: 8px red ridge;
+      border-radius: 20px/10px;
+      box-shadow: 6px 6px 6px black;
+      text-shadow: 2px 2px 4px black; }
+      @media only screen and (max-width: 600px) {
+        .header-4 .heading_primary-main {
+          font-size: 5rem;
+          letter-spacing: 2.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .header-4 .heading_primary-main {
+          font-size: 4rem;
+          letter-spacing: 1.9rem; } }
+    .header-4 .heading_primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 900px) {
+        .header-4 .heading_primary-sub {
           font-size: 1.5rem;
           letter-spacing: 1.2rem; } }
 
@@ -279,7 +488,7 @@ body {
       font-size: 2rem;
       letter-spacing: 1rem; } }
 
-.heading-secundarioModelo {
+.heading-secundario-modelo {
   border: 8px yellowgreen dotted;
   border-radius: 20px/10px;
   box-shadow: 0px 6px 6px black;
@@ -296,15 +505,15 @@ body {
   color: #fff;
   text-shadow: 5px 5px 5px #aaa; }
   @media only screen and (max-width: 900px) {
-    .heading-secundarioModelo {
+    .heading-secundario-modelo {
       font-size: 3rem;
       letter-spacing: 1.5rem; } }
   @media only screen and (max-width: 600px) {
-    .heading-secundarioModelo {
+    .heading-secundario-modelo {
       font-size: 2rem;
       letter-spacing: 1rem; } }
 
-.heading-secundarioMoc {
+.heading-secundario-moc {
   border: 8px red inset;
   border-radius: 20px/10px;
   box-shadow: 0px 8px 6px black;
@@ -321,11 +530,11 @@ body {
   color: #fff;
   text-shadow: 5px 5px 5px #aaa; }
   @media only screen and (max-width: 900px) {
-    .heading-secundarioMoc {
+    .heading-secundario-moc {
       font-size: 3rem;
       letter-spacing: 1.5rem; } }
   @media only screen and (max-width: 600px) {
-    .heading-secundarioMoc {
+    .heading-secundario-moc {
       font-size: 2rem;
       letter-spacing: 1rem; } }
 
@@ -377,7 +586,7 @@ body {
     width: 80%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .2s; }
+    transition: all .5s; }
     .composicion_2_mainfoto:hover {
       outline: 1.5rem solid red;
       transform: scale(1.05) translateY(-0.5rem);
@@ -387,20 +596,10 @@ body {
     width: 55%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .2s;
-    /*  @include respond(tab-port){
-            float: left;
-            position: relative;
-            width: 33.3333%;
-            box-shadow: 0 1.5rem 3rem rgba($color-negro, .2);
-        }*/ }
+    transition: all .5s; }
     .composicion_2_foto-f1 {
       left: 0;
-      top: -2rem;
-      /* @include respond(tab-port){
-                top: 0;
-                
-            }*/ }
+      top: -2rem; }
     .composicion_2_foto-f2 {
       right: 0;
       top: 2rem; }
@@ -427,7 +626,7 @@ body {
     width: 80%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .2s; }
+    transition: all .5s; }
     .composicion_3_mainfoto:hover {
       outline: 1.5rem solid red;
       transform: scale(1.05) translateY(-0.5rem);
@@ -437,7 +636,7 @@ body {
     width: 55%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .2s; }
+    transition: all .5s; }
     .composicion_3_foto-f1 {
       left: 0;
       top: -2rem; }
@@ -512,275 +711,3 @@ body {
       #pie #google {
         height: 30px;
         width: 30px; } }
-
-.header2 {
-  height: 120vh;
-  background-image: url(../img/corona.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header2 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header2 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header2_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .header2_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header2_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header2_text_box {
-        top: 60%; } }
-  .header2 .heading_primary {
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .header2 .heading_primary-main {
-      color: blue;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px blue ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header2 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header2 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header2 .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header2 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
-
-.header2 {
-  height: 120vh;
-  background-image: url(../img/corona.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header2 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header2 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header2_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .header2_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header2_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header2_text_box {
-        top: 60%; } }
-  .header2 .heading_primary {
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .header2 .heading_primary-main {
-      color: blue;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px blue ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header2 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header2 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header2 .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header2 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
-
-.headerM {
-  height: 100vh;
-  background-image: url(../img/moc/mo.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .headerM {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .headerM {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .headerM_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .headerM_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .headerM_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .headerM_text_box {
-        top: 60%; } }
-  .headerM .heading_primary {
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .headerM .heading_primary-main {
-      color: red;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px red ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .headerM .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .headerM .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .headerM .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .headerM .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
-
-.header3 {
-  height: 120vh;
-  background-image: url(../img/victoriafondo.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header3 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header3 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header3_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .header3_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header3_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header3_text_box {
-        top: 60%; } }
-  .header3 .heading_primary {
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .header3 .heading_primary-main {
-      color: red;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px red ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header3 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header3 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header3 .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header3 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
