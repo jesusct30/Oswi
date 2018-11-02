@@ -78,7 +78,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #000; }
   @media only screen and (max-width: 1800px) {
     html {
       font-size: 65%; } }
@@ -163,213 +164,39 @@ body {
           font-size: 1.5rem;
           letter-spacing: 1.2rem; } }
 
-.header-2 {
+.head-3 {
+  padding-top: 5rem;
   height: 100vh;
-  background-image: url(../img/corona.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header-2 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header-2 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header-2_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .header-2_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header-2_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header-2_text_box {
-        top: 60%; } }
-  .header-2 .heading_primary {
+  background-image: url(../img/moc/mo.jpg); }
+  .head-3 .heading_primary {
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    .head-3 .heading_primary-main {
+      color: red;
+      border: 12px red groove;
+      border-radius: 20px/10px; }
+    .head-3 .heading_primary-sub {
+      color: red; }
+
+.head-2 {
+  height: 100vh;
+  background-image: url(../img/corona.jpg); }
+  .head-2 .heading_primary {
     text-transform: uppercase;
     margin-bottom: 6rem; }
-    .header-2 .heading_primary-main {
+    .head-2 .heading_primary-main {
       color: blue;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px blue ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header-2 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header-2 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header-2 .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header-2 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
+      border: 8px blue ridge; }
 
-.header-3 {
-  height: 100vh;
-  background-image: url(../img/moc/mo.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header-3 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header-3 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header-3_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-    @media only screen and (max-width: 900px) {
-      .header-3_logo_box {
-        top: -50px; } }
-  .header-3_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header-3_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header-3_text_box {
-        top: 60%; } }
-  .header-3 .heading_primary {
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .header-3 .heading_primary-main {
-      color: red;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px red ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header-3 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header-3 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header-3 .heading_primary-sub {
-      color: red;
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header-3 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
-
-.header-4 {
+.head-4 {
   height: 120vh;
-  background-image: url(../img/victoriafondo.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @media only screen and (max-width: 900px) {
-    .header-4 {
-      height: 80vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  @media only screen and (max-width: 600px) {
-    .header-4 {
-      height: 75vh;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
-  .header-4_logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%; }
-  .header-4_logo {
-    height: 10rem;
-    border-radius: 20%; }
-  .header-4_text_box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 900px) {
-      .header-4_text_box {
-        top: 60%; } }
-  .header-4 .heading_primary {
+  background-image: url(../img/victoriafondo.jpg); }
+  .head-4 .heading_primary {
     text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .header-4 .heading_primary-main {
+    margin-bottom: 3rem; }
+    .head-4 .heading_primary-main {
       color: red;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-out;
-      border: 8px red ridge;
-      border-radius: 20px/10px;
-      box-shadow: 6px 6px 6px black;
-      text-shadow: 2px 2px 4px black; }
-      @media only screen and (max-width: 600px) {
-        .header-4 .heading_primary-main {
-          font-size: 5rem;
-          letter-spacing: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .header-4 .heading_primary-main {
-          font-size: 4rem;
-          letter-spacing: 1.9rem; } }
-    .header-4 .heading_primary-sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.5rem;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
-      @media only screen and (max-width: 900px) {
-        .header-4 .heading_primary-sub {
-          font-size: 1.5rem;
-          letter-spacing: 1.2rem; } }
+      border: 8px red ridge; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -434,36 +261,21 @@ body {
 
 .seccion-about {
   height: 70vh;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
   background-image: linear-gradient(to right bottom, rgba(255, 87, 34, 0.4), rgba(255, 202, 40, 0.4)), url(../img/iphone5s-744x1392-wallpaper_04253.jpg);
   background-size: cover;
   height: 100%;
   background-position: top;
   position: relative;
   padding-top: 1rem;
-  background-color: #eeeeee;
-  color: #000; }
+  background-color: #eeeeee; }
 
-.seccion-about-modelo {
-  height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.4), rgba(255, 202, 40, 0.4)), url(../img/fondo.jpg);
-  background-size: cover;
-  height: 100%;
-  background-position: top;
-  position: relative;
-  padding-top: 1rem;
-  background-color: #eeeeee;
-  color: #000; }
+.seccion-moc {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.4), rgba(255, 202, 40, 0.4)), url(../img/moc/noche.jpg); }
 
-.seccion-about-moc {
-  height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.4), rgba(255, 202, 40, 0.4)), url(../img/moc/noche.jpg);
-  background-size: cover;
-  height: 100%;
-  background-position: top;
-  position: relative;
-  padding-top: 1rem;
-  background-color: #eeeeee;
-  color: #000; }
+.seccion-modelo {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.4), rgba(255, 202, 40, 0.4)), url(../img/fondo.jpg); }
 
 .heading-secundario {
   text-transform: uppercase;
@@ -488,55 +300,21 @@ body {
       font-size: 2rem;
       letter-spacing: 1rem; } }
 
-.heading-secundario-modelo {
+.secundario-modelo {
   border: 8px yellowgreen dotted;
   border-radius: 20px/10px;
   box-shadow: 0px 6px 6px black;
   text-transform: uppercase;
   margin-bottom: 4rem;
-  font-family: "Osw";
-  display: block;
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 2rem;
-  animation-name: moveInBottom;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  color: #fff;
-  text-shadow: 5px 5px 5px #aaa; }
-  @media only screen and (max-width: 900px) {
-    .heading-secundario-modelo {
-      font-size: 3rem;
-      letter-spacing: 1.5rem; } }
-  @media only screen and (max-width: 600px) {
-    .heading-secundario-modelo {
-      font-size: 2rem;
-      letter-spacing: 1rem; } }
+  font-family: "Osw"; }
 
-.heading-secundario-moc {
+.secundario-moc {
   border: 8px red inset;
   border-radius: 20px/10px;
   box-shadow: 0px 8px 6px black;
   text-transform: uppercase;
   margin-bottom: 4rem;
-  font-family: "Osw";
-  display: block;
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 2rem;
-  animation-name: moveInBottom;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  color: #fff;
-  text-shadow: 5px 5px 5px #aaa; }
-  @media only screen and (max-width: 900px) {
-    .heading-secundario-moc {
-      font-size: 3rem;
-      letter-spacing: 1.5rem; } }
-  @media only screen and (max-width: 600px) {
-    .heading-secundario-moc {
-      font-size: 2rem;
-      letter-spacing: 1rem; } }
+  font-family: "Osw"; }
 
 .titulos {
   text-transform: uppercase;
@@ -546,11 +324,11 @@ body {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 2rem;
-  animation-name: moveInBottom;
+  animation-name: moveInLeft;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   color: #fff;
-  text-shadow: 5px 5px 5px #aaa; }
+  text-shadow: 5px 5px 5px #fff; }
   @media only screen and (max-width: 900px) {
     .titulos {
       font-size: 3rem;
@@ -564,7 +342,11 @@ body {
   font-size: 1.6rem;
   opacity: 0.8;
   text-align: left;
-  color: white; }
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  color: white;
+  display: block; }
   .parrafo:last-child {
     margin-bottom: 3rem; }
   .parrafo:not(::last-child) {
@@ -584,11 +366,11 @@ body {
   position: relative; }
   .composicion_2_mainfoto {
     width: 80%;
-    border-radius: 20%;
+    border-radius: 2%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .5s; }
+    transition: all .2s; }
     .composicion_2_mainfoto:hover {
-      outline: 1.5rem solid red;
+      outline: 1.5rem solid blue;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem #000;
       z-index: 100; }
@@ -596,24 +378,7 @@ body {
     width: 55%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .5s; }
-    .composicion_2_foto-f1 {
-      left: 0;
-      top: -2rem; }
-    .composicion_2_foto-f2 {
-      right: 0;
-      top: 2rem; }
-      @media only screen and (max-width: 900px) {
-        .composicion_2_foto-f2 {
-          top: -1;
-          left: 0; } }
-    .composicion_2_foto-f3 {
-      left: 20%;
-      top: 10rem; }
-      @media only screen and (max-width: 900px) {
-        .composicion_2_foto-f3 {
-          top: 1;
-          left: 0; } }
+    transition: all .2s; }
     .composicion_2_foto:hover {
       outline: 1.5rem solid blue;
       transform: scale(1.05) translateY(-0.5rem);
@@ -624,11 +389,11 @@ body {
   position: relative; }
   .composicion_3_mainfoto {
     width: 80%;
-    border-radius: 20%;
-    box-shadow: 0 1.5rem, 4rem #000;
+    border-radius: 2%;
+    box-shadow: 0 1.5rem, 4rem #ff5722;
     transition: all .5s; }
     .composicion_3_mainfoto:hover {
-      outline: 1.5rem solid red;
+      outline: 1.5rem groove red;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem #000;
       z-index: 100; }
@@ -636,26 +401,9 @@ body {
     width: 55%;
     border-radius: 20%;
     box-shadow: 0 1.5rem, 4rem #000;
-    transition: all .5s; }
-    .composicion_3_foto-f1 {
-      left: 0;
-      top: -2rem; }
-    .composicion_3_foto-f2 {
-      right: 0;
-      top: 2rem; }
-      @media only screen and (max-width: 900px) {
-        .composicion_3_foto-f2 {
-          top: -1;
-          left: 0; } }
-    .composicion_3_foto-f3 {
-      left: 20%;
-      top: 10rem; }
-      @media only screen and (max-width: 900px) {
-        .composicion_3_foto-f3 {
-          top: 1;
-          left: 0; } }
+    transition: all .2s; }
     .composicion_3_foto:hover {
-      outline: 1.5rem solid red;
+      outline: 1.5rem solid blue;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem #000;
       z-index: 100; }

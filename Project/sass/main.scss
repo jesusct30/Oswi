@@ -29,6 +29,7 @@ html{
     @include respond(telefono){
         font-size: 37.5%;// 5px;
     }
+    background-color: $color-negro;
     
        
 }
@@ -133,292 +134,69 @@ body{
             }
         }
     }
+    
+
 }
-.header-2{
-
-    
-
+.head-3{
+    padding-top: 5rem;
     height: 100vh;
-      
-       background-image: 
-            url(../img/corona.jpg);
    
-       //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
-       //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
-       @include respond(tab-port){
-           height: 80vh;
-           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-           
-       } 
-       @include respond(telefono){
-           height: 75vh;
-           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-           
-       }
-       
-       background-size: cover;
-       background-position: top;
-       position: relative;
-   
-       &_logo_box{
-       position: absolute;
-       top: 4rem;
-       left: 4rem;
-       border-radius: 20%;
-       }
-   
-       &_logo{
-           height: 10rem;
-           border-radius: 20%;
-       }
-   
-       &_text_box{
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          text-align: center;
-          transform: translate(-50%,-50%);
-          @include respond(tab-port){
-           top: 60%; 
-           
-       }
-       }
-   
+ 
+  background-image: 
+       url(../img/moc/mo.jpg);
        .heading_primary{
-           text-transform: uppercase;
-           margin-bottom: 6rem;
-   
-           &-main{
-               color: blue;
-               display: block;
-               font-size: 6rem;
-               font-weight: 400;
-               letter-spacing: 3.5rem;
-               animation-name: moveInLeft;
-               animation-duration: 3s;
-               animation-timing-function: ease-out;
-               border: 8px blue ridge;
-               border-radius: 20px/10px;
-               box-shadow: 6px 6px 6px black;
-               text-shadow: 2px 2px 4px black;
-              
-   
-               @include respond(telefono){
-                   font-size:5rem; 
-                   letter-spacing: 2.2rem;
-               }
-               @include respond(telefono){
-                   font-size:4rem; 
-                   letter-spacing: 1.9rem;
-               }
-           }
-           
-   
-           &-sub{
-               display: block;
-               font-size: 2rem;
-               font-weight: 700;
-               letter-spacing: 1.5rem;
-               animation-name: moveInRight;
-               animation-duration: 3s;
-               animation-timing-function: ease-out;
-               @include respond(tab-port){
-                   font-size:1.5rem; 
-                   letter-spacing: 1.2rem;
-               }
-           }
-       }
-   }
-.header-3{
-
-  
-    
-
-    height: 100vh;
-      
-       background-image: 
-            url(../img/moc/mo.jpg);
-   
-       //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
-       //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
-       @include respond(tab-port){
-        height: 80vh;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-        
-    } 
-    @include respond(telefono){
-        height: 75vh;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-        
-    }
-    
-    background-size: cover;
-    background-position: top;
-    position: relative;
-
-    &_logo_box{
-        @include respond(tab-port){
-            top: -50px;
-        }
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    border-radius: 20%;
-    }
-
-    &_logo{
-        height: 10rem;
-        border-radius: 20%;
-    }
-
-    &_text_box{
-       position: absolute;
-       top: 40%;
-       left: 50%;
-       text-align: center;
-       transform: translate(-50%,-50%);
-       @include respond(tab-port){
-        top: 60%; 
-        
-    }
-    }
-
-    .heading_primary{
         text-transform: uppercase;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
 
         &-main{
             color:red;
-            display: block;
-            font-size: 6rem;
-            font-weight: 400;
-            letter-spacing: 3.5rem;
-            animation-name: moveInLeft;
-            animation-duration: 3s;
-            animation-timing-function: ease-out;
-            border: 8px red ridge;
+            border: 12px red groove;
             border-radius: 20px/10px;
-            box-shadow: 6px 6px 6px black;
-            text-shadow: 2px 2px 4px black;
-           
-
-            @include respond(telefono){
-                font-size:5rem; 
-                letter-spacing: 2.2rem;
-            }
-            @include respond(telefono){
-                font-size:4rem; 
-                letter-spacing: 1.9rem;
-            }
         }
-        
-
         &-sub{
             color: red;
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: 1.5rem;
-            animation-name: moveInRight;
-            animation-duration: 3s;
-            animation-timing-function: ease-out;
-            @include respond(tab-port){
-                font-size:1.5rem; 
-                letter-spacing: 1.2rem;
-            }
         }
     }
+}
+
+
+.head-2{
+    height: 100vh;
+       background-image: 
+            url(../img/corona.jpg);
+       .heading_primary{
+           text-transform: uppercase;
+           margin-bottom: 6rem;
+           &-main{
+               color: blue;        
+               border: 8px blue ridge;       
+           }
+           
+       }
    }
-.header-4{
+
+.head-4{
 
     height: 120vh;
       
        background-image: 
             url(../img/victoriafondo.jpg);
-   
-       //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);   
-       //clip-path: polygon(0 100%, 100% 100%, 50% 0%); 
-       @include respond(tab-port){
-           height: 80vh;
-           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-           
-       } 
-       @include respond(telefono){
-           height: 75vh;
-           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-           
-       }
        
-       background-size: cover;
-       background-position: top;
-       position: relative;
-   
-       &_logo_box{
-       position: absolute;
-       top: 4rem;
-       left: 4rem;
-       border-radius: 20%;
-       }
-   
-       &_logo{
-           height: 10rem;
-           border-radius: 20%;
-       }
-   
-       &_text_box{
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          text-align: center;
-          transform: translate(-50%,-50%);
-          @include respond(tab-port){
-           top: 60%; 
-           
-       }
-       }
+       
+       
    
        .heading_primary{
            text-transform: uppercase;
-           margin-bottom: 6rem;
+           margin-bottom: 3rem;
    
            &-main{
                color: red;
-               display: block;
-               font-size: 6rem;
-               font-weight: 400;
-               letter-spacing: 3.5rem;
-               animation-name: moveInLeft;
-               animation-duration: 3s;
-               animation-timing-function: ease-out;
                border: 8px red ridge;
-               border-radius: 20px/10px;
-               box-shadow: 6px 6px 6px black;
-               text-shadow: 2px 2px 4px black;
-              
-   
-               @include respond(telefono){
-                   font-size:5rem; 
-                   letter-spacing: 2.2rem;
-               }
-               @include respond(telefono){
-                   font-size:4rem; 
-                   letter-spacing: 1.9rem;
-               }
            }
            
    
            &-sub{
-               display: block;
-               font-size: 2rem;
-               font-weight: 700;
-               letter-spacing: 1.5rem;
-               animation-name: moveInRight;
-               animation-duration: 3s;
-               animation-timing-function: ease-out;
-               @include respond(tab-port){
-                   font-size:1.5rem; 
-                   letter-spacing: 1.2rem;
-               }
+              // no hay estilo 
            }
        }
    }
@@ -440,11 +218,7 @@ body{
         @include respond(telefono){
             top: -60px;
         }
-        
 
-
-
-        
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -505,6 +279,8 @@ body{
 }
 .seccion-about{
     height: 70vh;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
    
     background-image: linear-gradient(
         to right bottom,
@@ -520,46 +296,25 @@ body{
     padding-top: 1rem;
     background-color: $color-gris-claro;
         
-    color: $color-negro;
+    
 }
-.seccion-about-modelo{
-    height: 70vh;
-   
+.seccion-moc{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(blue, 0.4),
+        rgba($color-amarillo, 0.4)),
+         url(../img/moc/noche.jpg);         
+    
+}
+.seccion-modelo{
     background-image: linear-gradient(
         to right bottom,
         rgba(blue, 0.4),
         rgba($color-amarillo, 0.4)),
          url(../img/fondo.jpg);
-         background-size: cover;
-         height: 100%;
-         
-             
-    background-position: top;
-    position: relative;
-    padding-top: 1rem;
-    background-color: $color-gris-claro;
         
-    color: $color-negro;
 }
-.seccion-about-moc{ /////moctezuma
-    height: 70vh;
-   
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(blue, 0.4),
-        rgba($color-amarillo, 0.4)),
-         url(../img/moc/noche.jpg);
-         background-size: cover;
-         height: 100%;
-         
-             
-    background-position: top;
-    position: relative;
-    padding-top: 1rem;
-    background-color: $color-gris-claro;
-        
-    color: $color-negro;
-}
+
 
 .heading-secundario{
 
@@ -592,86 +347,35 @@ body{
                 letter-spacing: 1rem;
             }
 }
-.heading-secundario-modelo{
+.secundario-modelo{
     border: 8px yellowgreen dotted;
             border-radius: 20px/10px;
     box-shadow: 0px 6px 6px black;
     text-transform: uppercase;
         margin-bottom: 4rem;
         font-family: "Osw";
-        
-
-        
-            display: block;
-            font-size: 4rem;
-            font-weight: 300;
-            letter-spacing: 2rem;
-            animation-name: moveInBottom;
-            animation-duration: 3s;
-            animation-timing-function: ease-out;
-            color: $color-blanco;
-            text-shadow: 5px 5px 5px #aaa;
-           
-
-            @include respond(tab-port){
-                font-size:3rem; 
-                letter-spacing: 1.5rem;
-            }
-            @include respond(telefono){
-                font-size:2rem; 
-                letter-spacing: 1rem;
-            }
-
 }
-.heading-secundario-moc{
+.secundario-moc{
     border: 8px red inset;
             border-radius: 20px/10px;
     box-shadow: 0px 8px 6px black;
     text-transform: uppercase;
         margin-bottom: 4rem;
         font-family: "Osw";
-        
-
-        
-            display: block;
-            font-size: 4rem;
-            font-weight: 300;
-            letter-spacing: 2rem;
-            animation-name: moveInBottom;
-            animation-duration: 3s;
-            animation-timing-function: ease-out;
-            color: $color-blanco;
-            text-shadow: 5px 5px 5px #aaa;
-           
-
-            @include respond(tab-port){
-                font-size:3rem; 
-                letter-spacing: 1.5rem;
-            }
-            @include respond(telefono){
-                font-size:2rem; 
-                letter-spacing: 1rem;
-            }
-
 }
 .titulos{
     text-transform: uppercase;
         margin-bottom: 4rem;
-        font-family: "Osw";
-        
-
-        
+        font-family: "Osw";        
             display: block;
             font-size: 2rem;
             font-weight: 300;
             letter-spacing: 2rem;
-            animation-name: moveInBottom;
+            animation-name: moveInLeft;
             animation-duration: 3s;
             animation-timing-function: ease-out;
             color: $color-blanco;
-            text-shadow: 5px 5px 5px #aaa;
-           
-
+            text-shadow: 5px 5px 5px $color-blanco;
             @include respond(tab-port){
                 font-size:3rem; 
                 letter-spacing: 1.5rem;
@@ -688,7 +392,11 @@ body{
     font-size: $font-default-tam;
     opacity: 0.8;
     text-align: left;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
     color: white;
+    display: block;
     &:last-child{
         margin-bottom: 3rem;
     }
@@ -715,12 +423,12 @@ body{
     position: relative;
     &_mainfoto{
         width: 80%;
-        border-radius: 20%;
+        border-radius: 2%;
         box-shadow: 0 1.5rem, 4rem $color-negro;
         //position: absolute;
-        transition: all .5s;
+        transition: all .2s;
         &:hover{
-            outline: 1.5rem solid red;
+            outline: 1.5rem solid blue;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem $color-negro;
            z-index: 100;
@@ -731,31 +439,9 @@ body{
         border-radius: 20%;
         box-shadow: 0 1.5rem, 4rem $color-negro;
         //position: absolute;
-        transition: all .5s;
-     
-        &-f1{
-            left: 0;
-            top: -2rem;
-          
-        }
-        &-f2{
-            right: 0;
-            top: 2rem;
-            @include respond(tab-port){
-                top: -1;
-                left: 0;
-                
-            }
-        }
-        &-f3{
-            left: 20%;
-            top: 10rem;
-            @include respond(tab-port){
-                top: 1;
-                left: 0;
-                
-            }
-        }
+        transition: all .2s;
+      
+
         &:hover{
             outline: 1.5rem solid blue;
             transform: scale(1.05) translateY(-.5rem);
@@ -769,12 +455,12 @@ body{
     position: relative;
     &_mainfoto{
         width: 80%;
-        border-radius: 20%;
-        box-shadow: 0 1.5rem, 4rem $color-negro;
+        border-radius: 2%;
+        box-shadow: 0 1.5rem, 4rem $color-naranja;
         //position: absolute;
         transition: all .5s;
         &:hover{
-            outline: 1.5rem solid red;
+            outline: 1.5rem groove red;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem $color-negro;
            z-index: 100;
@@ -785,33 +471,11 @@ body{
         border-radius: 20%;
         box-shadow: 0 1.5rem, 4rem $color-negro;
         //position: absolute;
-        transition: all .5s;
-     
-        &-f1{
-            left: 0;
-            top: -2rem;
-          
-        }
-        &-f2{
-            right: 0;
-            top: 2rem;
-            @include respond(tab-port){
-                top: -1;
-                left: 0;
-                
-            }
-        }
-        &-f3{
-            left: 20%;
-            top: 10rem;
-            @include respond(tab-port){
-                top: 1;
-                left: 0;
-                
-            }
-        }
+        transition: all .2s;
+      
+
         &:hover{
-            outline: 1.5rem solid red;
+            outline: 1.5rem solid blue;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem $color-negro;
            z-index: 100;
