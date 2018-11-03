@@ -388,7 +388,7 @@ body{
 
 
 .parrafo{
-    
+    position: relative;
     font-size: $font-default-tam;
     opacity: 0.8;
     text-align: left;
@@ -396,7 +396,8 @@ body{
     animation-duration: 3s;
     animation-timing-function: ease-out;
     color: white;
-    display: block;
+   
+    
     &:last-child{
         margin-bottom: 3rem;
     }
@@ -406,13 +407,17 @@ body{
 }
 .composicion{
     position: relative;
-    text-align: center;
+    
+    
     &_foto{
         width: 90%;
         height: 100%;
+        
         border-radius: 20%;
-        margin-left: 10px; 
-        box-shadow: 5px 5px 5px #aaa;
+       //margin-left: 10px;
+       box-shadow: 5px 5px 5px  white; 
+       
+        
     
         
     }
@@ -550,7 +555,68 @@ body{
             
         }
     }
-    
+}
+
+.card{
+    position: relative;
+    &_lado{
+        height: auto;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        @include respond(tab-port){
+            top: 10px;
+            
+        }
+        @include respond(telefono){
+            top: 60px;
+        }
+        left: 0;
+        width: 100%;
+        //box-shadow: 5px 5px 5px $color-negro;
+        border-radius: 20px;
+
+      display: table-cell;
+    vertical-align: middle;
+      
+
+
+        
+       
+        overflow: hidden;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden
+        &-front{
+            background-color: $color-blanco;
+            
+        
+           
+            
+        }
+        &-back{
+            transform: rotateY(180deg);
+           
+        }
+    }
+    &:hover &_lado-front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &_lado-back{
+        transform: rotateY(0);
+    }
+
+    &_foto{
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        
+        
+       
+    }
+
+   
+
 }
 
 

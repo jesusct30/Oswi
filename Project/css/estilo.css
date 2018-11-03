@@ -339,28 +339,26 @@ body {
       letter-spacing: 1rem; } }
 
 .parrafo {
+  position: relative;
   font-size: 1.6rem;
   opacity: 0.8;
   text-align: left;
   animation-name: moveInRight;
   animation-duration: 3s;
   animation-timing-function: ease-out;
-  color: white;
-  display: block; }
+  color: white; }
   .parrafo:last-child {
     margin-bottom: 3rem; }
   .parrafo:not(::last-child) {
     margin-bottom: 1rem; }
 
 .composicion {
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .composicion_foto {
     width: 90%;
     height: 100%;
     border-radius: 20%;
-    margin-left: 10px;
-    box-shadow: 5px 5px 5px #aaa; }
+    box-shadow: 5px 5px 5px  white; }
 
 .composicion_2 {
   position: relative; }
@@ -459,3 +457,37 @@ body {
       #pie #google {
         height: 30px;
         width: 30px; } }
+
+.card {
+  position: relative; }
+  .card_lado {
+    height: auto;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden .card_lado -front;
+      -webkit-backface-visibility-background-color: #fff; }
+    @media only screen and (max-width: 900px) {
+      .card_lado {
+        top: 10px; } }
+    @media only screen and (max-width: 600px) {
+      .card_lado {
+        top: 60px; } }
+    .card_lado-back {
+      transform: rotateY(180deg); }
+  .card:hover .card_lado-front {
+    transform: rotateY(-180deg); }
+  .card:hover .card_lado-back {
+    transform: rotateY(0); }
+  .card_foto {
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    position: relative; }
