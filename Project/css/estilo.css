@@ -523,3 +523,31 @@ body {
     background-size: cover;
     height: auto;
     position: relative; }
+
+.card {
+  position: relative;
+  height: 38rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card_lado {
+    height: 38rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+    .card_lado-front {
+      background-color: #fff; }
+    .card_lado-back {
+      transform: rotateY(180deg); }
+      .card_lado-back-1 {
+        background-image: linear-gradient(to right bottom, #ff5722, green); }
+      .card_lado-back-2 {
+        background-image: linear-gradient(to right bottom, #ff5722, #eeeeee); }
+      .card_lado-back-3 {
+        background-image: linear-gradient(to right bottom, #ff5722, blue); }
