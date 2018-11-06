@@ -311,6 +311,7 @@ body{
     position: relative;
     padding-top: 1rem;
     background-color: $color-gris-claro;
+    
         
     
 }
@@ -606,6 +607,7 @@ body{
     }
 }
 
+
 .card{
     position: relative;
     &_lado{
@@ -673,7 +675,13 @@ body{
     height: 38rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    
+    @include respond(tab-port){
+        top: 10px;
+        
+    }
+    @include respond(telefono){
+        top: 60px;
+    }
 
     &_lado{
         height: 38rem;
@@ -687,32 +695,18 @@ body{
         overflow: hidden;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
-
+        
         &-front{
-            background-color: $color-blanco;
+            
+            border-radius: 20%;
         }
 
         &-back{
             transform: rotateY(180deg);
-            &-1{
-                background-image: linear-gradient(to right bottom,
-                $color-naranja,
-                $color-verde );
-            }
-            &-2{
-                background-image: linear-gradient(to right bottom,
-                $color-naranja,
-                $color-gris-claro);
-            }
-            &-3{
-                background-image: linear-gradient(to right bottom,
-                $color-naranja,
-                blue );
-            }
+           
         }
     }
 }
-
 
 
 
